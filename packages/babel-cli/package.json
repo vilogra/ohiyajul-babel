@@ -1,5 +1,5 @@
 {
-  "name": "@ohiyajul-babel/cli",
+  "name": "ohiyajul-babel-cli",
   "version": "7.20.8",
   "description": "Babel command line.",
   "author": "The Babel Team (https://babel.dev/team)",

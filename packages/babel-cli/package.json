@@ -1,5 +1,5 @@
 {
-  "name": "ohiyajul-@babel/cli",
+  "name": "@ohiyajul-babel/cli",
   "version": "7.20.8",
   "description": "Babel command line.",
   "author": "The Babel Team (https://babel.dev/team)",
@@ -50,6 +50,7 @@
     "@babel/helper-fixtures": "workspace:^",
     "@types/fs-readdir-recursive": "^1.1.0",
     "@types/glob": "^7.2.0",
+    "lerna": "^6.4.0",
     "rimraf": "^3.0.0",
     "semver": "^6.3.0"
   },
@@ -78,5 +79,11 @@
     ".": "./lib/index.js",
     "./package.json": "./package.json"
   },
-  "type": "commonjs"
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "commonjs",
+  "workspaces": [
+    "packages/*"
+  ]
 }

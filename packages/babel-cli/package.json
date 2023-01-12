@@ -1,5 +1,5 @@
 {
-  "name": "ohiyajul-babel-cli",
+  "name": "ohiyajul-babel-cli-alt",
   "version": "7.20.8",
   "description": "Babel command line.",
   "author": "The Babel Team (https://babel.dev/team)",
@@ -35,11 +35,11 @@
     "convert-source-map": "^1.1.0",
     "fs-readdir-recursive": "^1.1.0",
     "glob": "^7.2.0",
-    "make-dir": "condition:BABEL_8_BREAKING ? : ^2.1.0",
-    "slash": "condition:BABEL_8_BREAKING ? ^3.0.0 : ^2.0.0"
+    "make-dir": "^2.1.0",
+    "slash": "^3.0.0"
   },
   "optionalDependencies": {
-    "@nicolo-ribaudo/chokidar-2": "condition:BABEL_8_BREAKING ? : 2.1.8-no-fsevents.3",
+    "@nicolo-ribaudo/chokidar-2": "2.1.8-no-fsevents.3",
     "ohiyajul-chokidar": "3.5.4"
   },
   "peerDependencies": {
@@ -78,9 +78,6 @@
   "exports": {
     ".": "./lib/index.js",
     "./package.json": "./package.json"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "type": "commonjs",
   "workspaces": [
